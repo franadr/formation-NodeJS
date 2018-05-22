@@ -8,9 +8,7 @@ const jwtconf = require('../../config/jwt.json');
 router.get('/',(req,res,next) => {
     const payload = {
         'userId' : -1,
-
-
-    }
+    };
 
 
     jwt.sign(payload,jwtconf.secret, (err,token) => {
